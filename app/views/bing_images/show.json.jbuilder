@@ -1,0 +1,1 @@
+json.partial! "bing_images/bing_image", bing_image: @bing_image

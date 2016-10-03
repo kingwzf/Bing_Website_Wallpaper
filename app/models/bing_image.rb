@@ -1,0 +1,2 @@
+class BingImage < ApplicationRecord
+end

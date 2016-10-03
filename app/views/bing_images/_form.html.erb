@@ -1,0 +1,22 @@
+<%= form_for(bing_image) do |f| %>
+  <% if bing_image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bing_image.errors.count, "error") %> prohibited this bing_image from being saved:</h2>
+
+      <ul>
+      <% bing_image.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
