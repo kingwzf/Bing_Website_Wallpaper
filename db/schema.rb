@@ -13,7 +13,10 @@
 ActiveRecord::Schema.define(version: 20161003082300) do
 
   create_table "bing_images", force: :cascade do |t|
+    t.string   "date"
     t.string   "link"
+    t.string   "local"
+    t.string   "qiniu"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

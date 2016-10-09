@@ -5,15 +5,20 @@
 <table>
   <thead>
     <tr>
+      <th>Date</th>
       <th>Link</th>
-      <th colspan="3"></th>
+      <th>Local</th>
+      <th>Qiniu</th>
     </tr>
   </thead>
 
   <tbody>
     <% @bing_images.each do |bing_image| %>
       <tr>
+        <td><%= bing_image.date %></td>
         <td><%= bing_image.link %></td>
+        <td><%= bing_image.local %></td>
+        <td><%= bing_image.qiniu %></td>
         <td><%= link_to 'Show', bing_image %></td>
         <td><%= link_to 'Edit', edit_bing_image_path(bing_image) %></td>
         <td><%= link_to 'Destroy', bing_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>

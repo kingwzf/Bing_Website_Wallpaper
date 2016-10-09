@@ -11,9 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
+ <div class="field">
+    <%= f.label :date %>
+    <%= f.text_field :date %>
+  </div>
+
+ <div class="field">
     <%= f.label :link %>
     <%= f.text_field :link %>
+  </div>
+
+   <div class="field">
+    <%= f.label :local %>
+    <%= f.text_field :local %>
+  </div>
+
+  <div class="field">
+    <%= f.label :qiniu %>
+    <%= f.text_field :qiniu %>
   </div>
 
   <div class="actions">

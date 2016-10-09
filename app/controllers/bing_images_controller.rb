@@ -69,6 +69,6 @@ class BingImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bing_image_params
-      params.require(:bing_image).permit(:link)
+      params.require(:bing_image).permit(:date, :link, :local, :qiniu)
     end
 end

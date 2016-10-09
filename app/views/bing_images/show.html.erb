@@ -1,8 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Date:</strong>
+  <%= @bing_image.date %>
+</p>
+
+<p>
   <strong>Link:</strong>
   <%= @bing_image.link %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @bing_image.local %>
+</p>
+
+<p>
+  <strong>Qiniu:</strong>
+  <%= @bing_image.qiniu %>
 </p>
 
 <%= link_to 'Edit', edit_bing_image_path(@bing_image) %> |
